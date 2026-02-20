@@ -1,0 +1,9 @@
+file_format: "1"
+id: twobutton
+name: TwoButton XInput
+type: shield
+url: https://github.com/yourusername/zmk-xinput-module
+requires: [weact_mini_f411ce]
+features:
+  - keys
+siblings: []

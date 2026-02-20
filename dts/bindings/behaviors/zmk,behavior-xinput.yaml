@@ -1,0 +1,5 @@
+description: XInput behavior driver
+
+compatible: "zmk,behavior-xinput"
+
+include: one_param.yaml
