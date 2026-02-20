@@ -1,0 +1,5 @@
+description: WeAct Studio BlackPill GPIO nexus
+
+compatible: "weact-studio,blackpill"
+
+include: [gpio-nexus.yaml, base.yaml]

@@ -1,0 +1,18 @@
+if BOARD_WEACT_MINI_F411CE
+
+config ZMK_KEYBOARD_NAME
+	default "WeAct MiniF4"
+
+config USB_DEVICE_MANUFACTURER
+	default "WeAct Studio"
+
+config USB_DEVICE_PRODUCT
+	default "WeAct MiniF4"
+
+config USB_DEVICE_VID
+	default 0x1D50
+
+config USB_DEVICE_PID
+	default 0x615E
+
+endif # BOARD_WEACT_MINI_F411CE
