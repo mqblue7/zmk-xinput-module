@@ -5,4 +5,5 @@ board:
   socs:
     - name: stm32f411ce
   variants:
-    - qualifier: blackpill
+    - name: blackpill
+      qualifier: blackpill
