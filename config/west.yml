@@ -12,9 +12,9 @@ manifest:
       revision: main
       import: app/west.yml
 
-- name: zmk-xinput
+    - name: zmk-xinput
       remote: xinput-remote
-      revision: main        # ← was master, now main
+      revision: main
 
   self:
     path: config
