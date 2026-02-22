@@ -1,4 +1,4 @@
----
 include:
-  - board: weact_mini_f411ce@blackpill
+  - board: blackpill_f411ce
     shield: twobutton
+    artifact-name: twobutton-blackpill-xinput

@@ -2,10 +2,19 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+
+    - name: xinput-remote
+      url-base: https://github.com/mqblue7
+
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+
+    - name: zmk-xinput
+      remote: xinput-remote
+      revision: master
+
   self:
     path: config

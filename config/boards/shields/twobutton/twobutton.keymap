@@ -1,21 +1,23 @@
-/*
- * Copyright (c) 2025 ZMK XInput Module
- * SPDX-License-Identifier: MIT
- */
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include "dt-bindings/zmk/xinput.h"
 
 / {
-	keymap {
-		compatible = "zmk,keymap";
+    behaviors {
+        xin: xinput_button {
+            compatible = "zmk,behavior-xinput";
+            #binding-cells = <1>;
+        };
+    };
 
-		default_layer {
-			bindings = <
-				&xin XINPUT_A
-				&kp SPACE
-			>;
-		};
-	};
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &xin XINPUT_GAMEPAD_A    /* Button 0 PA1: XInput A button */
+                &kp SPACE                /* Button 1 PA2: Keyboard Space  */
+            >;
+        };
+    };
 };

@@ -1,4 +1,4 @@
-description: XInput behavior driver
+description: ZMK XInput Gamepad Button Behavior
 
 compatible: "zmk,behavior-xinput"
 

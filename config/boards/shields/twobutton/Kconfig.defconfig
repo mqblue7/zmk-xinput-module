@@ -1,9 +1,6 @@
 if SHIELD_TWOBUTTON
 
 config ZMK_KEYBOARD_NAME
-	default "TwoButton XInput"
-
-config ZMK_XINPUT
-	default y
+    default "TwoButton XInput"
 
 endif

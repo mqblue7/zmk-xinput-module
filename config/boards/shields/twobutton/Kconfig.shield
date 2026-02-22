@@ -1,2 +1,2 @@
 config SHIELD_TWOBUTTON
-	def_bool $(shields_list_contains,twobutton)
+    def_bool $(shields_list_contains,twobutton)

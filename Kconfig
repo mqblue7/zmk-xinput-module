@@ -1,6 +1,15 @@
 config ZMK_XINPUT
-	bool "XInput (Xbox 360 Gamepad) Support"
-	default n
-	help
-	  Enable XInput USB support for ZMK, allowing the keyboard to also
-	  function as an Xbox 360 compatible gamepad alongside the HID keyboard.
+    bool "ZMK XInput USB Gamepad Support"
+    depends on ZMK_USB
+    select USB_DEVICE_STACK
+    help
+      Enables an additional USB interface that presents as an Xbox 360
+      (XInput) compatible gamepad alongside the standard HID keyboard.
+
+if ZMK_XINPUT
+
+config ZMK_XINPUT_LOG_LEVEL
+    int "ZMK XInput Log Level"
+    default 0
+
+endif # ZMK_XINPUT

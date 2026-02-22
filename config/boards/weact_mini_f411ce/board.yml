@@ -1,8 +1,0 @@
-board:
-  name: weact_mini_f411ce
-  full_name: WeAct Studio MiniF4 STM32F411CE
-  vendor: weact
-  socs:
-    - name: stm32f411ce
-      variants:
-        - name: blackpill

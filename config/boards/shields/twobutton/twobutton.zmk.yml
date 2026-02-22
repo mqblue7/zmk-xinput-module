@@ -1,9 +1,9 @@
 file_format: "1"
 id: twobutton
-name: TwoButton XInput
+name: Two Button BlackPill (XInput + Keyboard)
 type: shield
-url: https://github.com/yourusername/zmk-xinput-module
-requires: [weact_mini_f411ce]
+url: https://github.com/mqblue7/zmk-xinput
+requires:
+  - blackpill_f411ce
 features:
   - keys
-siblings: []
