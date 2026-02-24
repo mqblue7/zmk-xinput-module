@@ -2,7 +2,7 @@
 
 #include <zephyr/device.h>
 #include <zephyr/logging/log.h>
-#include <zephyr/drivers/behavior.h>
+#include <drivers/behavior.h>
 #include <zmk/xinput.h>
 
 LOG_MODULE_DECLARE(zmk_xinput, CONFIG_ZMK_XINPUT_LOG_LEVEL);

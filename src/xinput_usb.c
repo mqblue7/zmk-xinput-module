@@ -167,7 +167,9 @@ void zmk_xinput_set_triggers(uint8_t left, uint8_t right)
  */
 int zmk_xinput_usb_init(void)
 {
-    return usb_set_config(&xinput_usb_cfg);
+    /* USBD_CLASS_DESCR_DEFINE registers the class automatically at link time.
+     * No explicit registration call needed in Zephyr 4.1. */
+    return 0;
 }
 
 SYS_INIT(zmk_xinput_usb_init, POST_KERNEL, 0);
